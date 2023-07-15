@@ -13,11 +13,12 @@ int[] FillArray(int[] arrayA)
 
 void PrintArray(int[] arrayB)
 {
+    Console.Write("[");
     for (int idx = 0; idx < arrayB.Length; idx++)
     {
         if (idx == arrayB.Length - 1)
         {
-            Console.Write($"{arrayB[idx]}");
+            Console.Write($"{arrayB[idx]}]");
         }
         else
         {
@@ -28,6 +29,3 @@ void PrintArray(int[] arrayB)
 
 int[] array = new int[8];
 PrintArray(FillArray(array));
-Console.Write(" -> [");
-PrintArray(array);
-Console.Write("]");
